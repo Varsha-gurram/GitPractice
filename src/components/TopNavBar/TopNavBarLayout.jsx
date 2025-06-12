@@ -1,10 +1,10 @@
 import React from 'react';
-import { AppBar, Toolbar, Typography, Box } from '@mui/material';
+import { AppBar, Toolbar,Typography, Box } from '@mui/material';
 
 const NavBar = ({ brand, children }) => {
   return (
     <AppBar position="fixed" sx={{ backgroundColor: '#F8F8F8' }}>
-      <Toolbar sx={{ justifyContent: 'space-between', gap: 2 }}>
+      <Toolbar sx={{ justifyContent: 'space-between', gap: 2,overflow:'visible' }}>
         <Typography
           variant="h6"
           sx={{
@@ -12,12 +12,12 @@ const NavBar = ({ brand, children }) => {
             height: '30px',
             width: '130px',
             backgroundColor: 'black',
-    color: 'white',
-    alignContent: 'center',
-    justifyContent: 'center',
-    display: 'flex',
-    padding: '13px',
-    borderRadius: '20px',
+            color: 'white',
+            alignContent: 'center',
+            justifyContent: 'center',
+            display: 'flex',
+            padding: '13px',
+            borderRadius: '20px',
           }}
         >
           {brand}
