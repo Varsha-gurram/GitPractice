@@ -2,21 +2,19 @@ import React, { useState } from 'react';
 import {
   Box,
   Drawer,
-  Typography,
   useMediaQuery,
   useTheme,
 } from '@mui/material';
 import NavbarLayoutStd from './components/TopNavBar/StudentNavbar/NavbarLayoutStd';
 import SidebarLayoutStd from './components/SideBar/StdSideBar/SideBarLayoutStd';
 import BodyLayoutStd from './components/MainBody/MainBodyStd/BodyLayoutStd';
-
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 const StudentDashboard = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
-
   const toggleDrawer = () => setDrawerOpen(prev => !prev);
-
   return (
     <Box sx={{ minHeight: '100vh' }}>
       <Box
@@ -33,12 +31,11 @@ const StudentDashboard = () => {
       >
         {!isMobile && (
           <Box
-            sx={{width: 180,bgcolor: '#ffd6ac',boxShadow: '3px solid black',borderRadius:5,p: 2,mt:0.5}}>
+            sx={{width: 180,bgcolor: '#ffd6ac',boxShadow: '3px solid black',borderRadius:0,p: 2,mt:0.0}}>
             <SidebarLayoutStd />
           </Box>
         )}
         <Box sx={{ flex: 1, p: 3, bgcolor: '#fff', overflowY: 'auto' }}>
-
           <BodyLayoutStd/>
         </Box>
       </Box>
