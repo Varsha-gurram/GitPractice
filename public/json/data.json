@@ -1,0 +1,28 @@
+[
+  {
+    "title": "Total enroll courses",
+    "value": 5,
+    "maxValue": 5,
+    "text": "5",
+    "icon": "school",
+    "color": "#00C49F",
+    "bgColor": "#E0F7F4"
+  },
+  {
+    "title": "Course completed",
+    "value": 1,
+    "maxValue": 5,
+    "text": "1",
+    "icon": "assignment",
+    "color": "#00B0FF",
+    "bgColor": "#E0F3FF"
+  },
+  {
+    "title": "Hours spent",
+    "value": 112,
+    "text": "112h",
+    "icon": "hourglass",
+    "color": "#FF4081",
+    "bgColor": "#FFEAF2"
+  }
+]

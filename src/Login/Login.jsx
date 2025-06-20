@@ -45,6 +45,7 @@ const Login = () => {
                 style={styles.input}
               />
             </div>
+            {/* <p>{loginData.usernameOrEmail}</p> */}
             <div style={styles.inputGroup}>
               <label htmlFor="password" style={styles.label}>Password:</label>
               <input
@@ -57,6 +58,7 @@ const Login = () => {
                 style={styles.input}
               />
             </div>
+            {/* <p>{loginData.password}</p> */}
             <button type="submit" style={styles.button}>Login</button>
           </form>
           <p style={{ marginTop: '20px', textAlign: 'center' }}>
@@ -67,6 +69,9 @@ const Login = () => {
               Forgot Password?
             </Link>
           </p>
+          <div>
+
+          </div>
         </div>
       </div>
     </div>
